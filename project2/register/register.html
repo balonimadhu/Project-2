@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container"></div>
+        <form action="index.html" onsubmit=" return register()" >
+            <div class="input-field">
+            <input type="text" class="text-name" id="first" name="firstname" autocomplete="off">
+            <label for="">First Name</label>
+           </div>
+           <span id="first-name-message" class="errormsg"></span>
+           <div class="input-field"> 
+            <input type="text" class="text-name" id="last" name="lastname" autocomplete="off" >
+            <label for="">Last Name</label>
+        </div>
+        <span id="last-name-message" class="errormsg"></span>
+        <div class="input-field">
+            <input type="number" class="text-name" id="contact" name="contactnumber" autocomplete="off" >
+            <label for="">Contact</label>
+          
+        </div>
+        <span id="contact-message" class="errormsg"></span>
+        
+        
+        <div class="input-field"> 
+            <input type="text" class="text-name" id="mail" name="email" autocomplete="off">
+            <label for="">Email</label>
+            <br/>
+       </div>
+       <span id="email-message" class="errormsg"></span>
+
+        <div class="input-field">
+            <input type="password" class="text-name" id="pass" name="password" >
+            <label for="">Password</label>
+        </div>
+        <span id="password-message" class="errormsg"></span>
+
+        <div class="input-field">
+            <input type="password" class="text-name" id="confirmpass" name=" confirmpassword" >
+            <label>Confirm Password</label>
+        </div>
+        <span id="confirm-password-message" class="errormsg"></span>
+
+        <div class="input">
+            <input type="radio" id="male"  class="radio-btn" name="radiobtn">
+            <label style="margin-right: 40px;">Male</label>
+            <input type="radio" id="female"  class="radio-btn" name="radiobtn">
+            <label>Female</label>
+        </div>
+        <span id="checkbox-message" class="errormsg"></span>
+
+            <div class="input-field">
+                <select class="country" id="drop">
+                    <option>Select a Country</option>
+                    <option>India</option>
+                    <option>Malaysia</option>
+                    <option>Iran</option>
+                    <option>Ukraine</option>
+                </select><br/>
+            </div>
+            <span id="option-message" class="errormsg"></span>
+
+            <div class="input">
+                <input type="checkbox" id="check" class="check-btn" name="checkbtn">
+                <label>I accept the terms and conditions.<label><br/>
+            </div>
+            <span id="tick-checkbox" class="errormsg"></span>
+
+             <div>
+                <input type="submit" class="button" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

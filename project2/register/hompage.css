@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+body {
+  background-image: url("images/tracker.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parent {
+  display: flex;
+}
+
+.container {
+  margin-top: 2%;
+  margin-left: 70px;
+  text-align: justify;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+}
+
+.header {
+  font-size: 30px;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 10px;
+  color: rgb(70, 21, 21);
+  margin-left: 30px;
+}
+
+.content {
+  padding: 10px;
+  font-size: 50px;
+  color: rgb(117, 76, 19);
+  word-spacing: 3px;
+  margin-left: 30px;
+}
+
+.input-field label {
+  font-size: 40px;
+  padding: 40px;
+  word-spacing: 3px;
+}
+
+.input-field input {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 35px;
+  margin-top: 20px;
+  border: none;
+  box-shadow: 5px 10px #888888;
+}
+
+button {
+  background-color: rgb(97, 108, 112);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  margin: 20px 0px 0px 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 5px 5px #888888;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+.result {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* set calculator as a popup */
+.box .button {
+  width: 50px;
+  height: 70px;
+  float: right;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #403c40;
+}
+
+/* calculator css */
+.overlay {
+  background: linear-gradient(to top, #fff1eb 0%, #c4d8e1 100%);
+  border: 1px solid gray;
+  padding: 20px 0px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px #a6b1e1;
+  height: 600px;
+  width: 500px;
+  text-align: center;
+  display: none;
+  margin-right: 30px;
+}
+
+.overlay button {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  padding: 2px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  color: #1d172c;
+  box-shadow: 0 5px 15px #555756;
+}
+
+.overlay button:hover {
+  transform: scale(1.07);
+}
+
+.overlay input {
+  width: 350px;
+  border: none;
+  padding: 25px;
+  margin: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px #e0ebeb;
+  font-size: 35px;
+  text-align: right;
+  cursor: pointer;
+  color: #403c40;
+}
+
+#cross-button {
+  font-size: 30px;
+  display: none;
+  margin-left: 85%;
+}
+
+table {
+  text-align: left;
+  margin-left: 5px;
+}
+
+td {
+  padding: 10px;
+}
+
+.mode button {
+  justify-content: end;
+}
+
+body.dark-mode {
+  background-image: url("images/track.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.dark-mode .header h1 {
+  color: #de7c7d;
+}
+
+body.dark-mode i {
+  color: #f0f0f0;
+}
+
+body.dark-mode .content {
+  color: #fbd288;
+}
+
+#dark {
+  margin-top: 20px;
+  margin-left: 100%;
+}
+
+.toggle-btn {
+  font-size: 30px;
+  padding: 10px 50px;
+}
+
+#clock {
+  font-size: 30px;
+  font-weight: bold;
+
+  padding: 20px 50px;
+}
+.stopwatch {
+  margin-left: 35%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.mode {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.calci {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .content-body{
+    width:38rem;
+    padding: 20px;
+  }
+  .header,
+  .content,
+  .input-field label,
+  .input-field input {
+    font-size: 30px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  button {
+    font-size: 10px;
+  }
+  td {
+    padding: 6px;
+  }
+
+  table {
+    margin-left: 50px;
+    font-size: 30px;
+  }
+  .mode {
+    margin-top: 20px;
+  }
+  .calci {
+    margin-top: 20px;
+    margin-right: 70%;
+  }
+  .stopwatch {
+    margin-left: 0px;
+  }
+}

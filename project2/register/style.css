@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/background3.jpg");
+  height: 100vh;
+  background-size: cover;
+  margin-top: 15%;
+  color: rgb(16, 15, 15);
+}
+.container {
+  width: 500px;
+  background: transparent;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px 40px;
+  box-shadow: 0px 0px 20px rgb(1, 7, 12);
+}
+.container h1 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(9, 62, 142);
+}
+.input-box {
+  width: 100%;
+  height: 100%;
+  margin: 30px 0;
+}
+.input-box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(105, 103, 103);
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 20px 45px 20px 20px;
+  color: black;
+}
+.input-box i {
+  position: absolute;
+  transform: translate(-50%);
+  font-size: 20px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.container .remember {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: -15px 0px 15px;
+}
+.remember label input {
+  margin-right: 3px;
+}
+.remember a {
+  color: #141313;
+  margin-right: 5px;
+}
+.remember a:hover {
+  color: rgb(40, 68, 140);
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(194, 232, 235);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(9, 62, 142);
+  font-weight: 600;
+}
+.register p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.register p a {
+  color: #080a88;
+  text-decoration: none;
+  font-size: 20px;
+}
+.register p a:hover {
+  text-decoration: underline;
+  color: rgb(40, 68, 140);
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
